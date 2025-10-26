@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>PAYROLL</title>
+</head>
+<body id="mainPage">
+  <div class="container">
+    <h1>GRC PAYROLL PROGRAM</h1>
+    <p>Enter Employee Details</p>
+
+    <form id="payrollForm">
+      <div class="form-container">
+
+        <div class="details-container">
+          <label for="idnum">ID NUMBER</label>
+          <div class="input-box">
+            <i class="fa-solid fa-id-card-clip"></i>
+            <input type="text" name="idnum" id="idnum" placeholder="Enter ID Number" required>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <label for="lname">LAST NAME</label>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <label for="fname">FIRST NAME</label>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <label for="mname">MIDDLE NAME</label>
+          <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" name="mname" id="mname" placeholder="Enter Middle Name">
+          </div>
+        </div>
+
+        <div class="details-container">
+          <label for="position">POSITION</label>
+          <div class="input-box">
+            <i class="fas fa-briefcase"></i>
+            <input type="text" name="position" id="position" placeholder="Enter Position" required>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="details-container">
+          <label for="rate">RATE</label>
+          <div class="input-box">
+            <i class="fas fa-money-bill-wave"></i>
+            <input type="number" name="rate" id="rate" placeholder="Daily Rate" required min="1">
+          </div>
+        </div>
+
+        <div class="details-container">
+          <label for="days">DAYS</label>
+          <div class="input-box">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="number" name="days" id="days" placeholder="Number of Days Worked" required min="1">
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary:  #0F172A;
+  --secondary: #1e293b;
+  --accent: #2DD4BF;
+  --orange: #F97316;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary);
+
+}
+.container,
+.form-container{
+  display: flex;
+  flex-direction: column;
+}
+.container,
+.receipt {
+  text-align: center;
+  background-color: var(--secondary);
+  width: 40%;
+  align-items: center;
+  padding: 3rem 2rem 5rem 3rem;
+  border-radius: 10px;
+  border: 1px solid rgba(152, 148, 148, 0.187);
+  box-shadow: rgba(132, 132, 138, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.container p {
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  font-size: 20px;
+}
+.container h1,
+.receipt h1 {
+  color: var(--accent);
+  font-size: 40px;
+}
+
+.form-container {
+  gap: 15px;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+}
+
+.details-container label {
+  width: 130px;
+  font-weight: bold;
+  text-align: right; 
+  color: #e2e8f0;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.input-box i {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  color: #e2e8f0;
+}
+
+.input-box input {
+  height: 3rem;
+  width: 17rem;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 2.8rem;
+  font-size: 15px;
+  background-color: #334155;
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.463);
+}
+
+.input-box input:focus {
+  border: 2px solid var(--accent);
+}
+
+.form-container .details-container:nth-of-type(6) input,
+.form-container .details-container:nth-of-type(7) input
+{
+  border: 2px solid var(--orange);
+}
+
+hr {
+  margin: 1rem 0;
+  opacity: 0.3;
+}
+
+ button {
+  padding: 15px 35px;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  cursor: pointer;
+  border: none;
+  color: none;
+  background-color: var(--accent);
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background-color: #57e3d1;
+}
+
+.receipt-content h3 {
+  color: white;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.receipt-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.receipt-info h3 {
+  font-size: 20px;
+  color: #d7dce2;
+}
+
+.receipt-info span {
+  color: #e3e6eb;
+  font-size: 17px;
+}
