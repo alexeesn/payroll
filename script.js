@@ -43,7 +43,6 @@ if (page === "mainPage") {
         localStorage.setItem('employeeData', JSON.stringify(formData));
         saveToRecentSubmissions(formData);
 
-        // ✅ Go to 2nd page
         window.location.href = 'receipt.html';
     }
 
@@ -118,3 +117,4 @@ if (page === "receiptPage") {
         }
     });
 }
+
